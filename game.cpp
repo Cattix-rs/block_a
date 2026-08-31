@@ -40,27 +40,7 @@ namespace Tmpl8
     // -----------------------------------------------------------
     void Game::Tick(float deltaTime)
     {
-        // Call this once per tick.
-        ProcessInput();
-
-        // Handle input.
-        if (GetKey(SDL_SCANCODE_W))
-        {
-            std::cout << "W" << std::endl;
-        }
-        if (GetKey(SDL_SCANCODE_A))
-        {
-            std::cout << "A" << std::endl;
-        }
-        if (GetKey(SDL_SCANCODE_S))
-        {
-            std::cout << "S" << std::endl;
-        }
-        if (GetKey(SDL_SCANCODE_D))
-        {
-            std::cout << "D" << std::endl;
-        }
-
+     
         // clear the graphics window
         screen->Clear(0);
         // print something in the graphics window
