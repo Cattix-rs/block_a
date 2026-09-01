@@ -23,6 +23,9 @@
     <ClCompile Include="template\scene.cpp">
       <Filter>template</Filter>
     </ClCompile>
+    <ClCompile Include="src\physics.cpp" />
+    <ClCompile Include="src\player.cpp" />
+    <ClCompile Include="src\level.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="game.h" />
@@ -53,6 +56,9 @@
     <ClInclude Include="template\scene.h">
       <Filter>template</Filter>
     </ClInclude>
+    <ClInclude Include="inc\physics.hpp" />
+    <ClInclude Include="inc\level.hpp" />
+    <ClInclude Include="inc\player.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md">
