@@ -122,6 +122,8 @@
   <!-- END Custom section -->
   <ItemGroup>
     <ClCompile Include="game.cpp" />
+    <ClCompile Include="scr\entity.cpp" />
+    <ClCompile Include="src\input.cpp" />
     <ClCompile Include="src\level.cpp" />
     <ClCompile Include="src\physics.cpp" />
     <ClCompile Include="src\player.cpp" />
@@ -144,6 +146,8 @@
   <ItemGroup>
     <ClInclude Include="cl\tools.cl" />
     <ClInclude Include="game.h" />
+    <ClInclude Include="inc\entity.hpp" />
+    <ClInclude Include="inc\input.hpp" />
     <ClInclude Include="inc\level.hpp" />
     <ClInclude Include="inc\physics.hpp" />
     <ClInclude Include="inc\player.hpp" />
