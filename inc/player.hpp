@@ -1,5 +1,6 @@
 #pragma once
 #include "entity.hpp"
+#include <tmpl8math.h>
 
 namespace Tmpl8
 {
@@ -9,6 +10,10 @@ namespace Tmpl8
 		Player() = default;
 		
 		~Player() = default;
+
+		void Init(int px = 0, int py = 0,);
+
+		void Update(float deltaTime);
 
 		float2 GetVelocity() const { return v; }
 		float2 GetPosition() const { return pos; }

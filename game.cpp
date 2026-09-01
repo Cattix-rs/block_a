@@ -5,18 +5,26 @@
 #include "precomp.h"
 #include "game.h"
 
-// -----------------------------------------------------------
-// Initialize the application
-// -----------------------------------------------------------
-void Game::Init()
+#include "player.hpp"
+namespace Tmpl8
 {
-	// anything that happens only once at application start goes here
-}
+	Player player;
 
-// -----------------------------------------------------------
-// Main application tick function - Executed once per frame
-// -----------------------------------------------------------
-void Game::Tick( float  deltaTime  )
-{
-	screen->Clear(0);
+	// -----------------------------------------------------------
+	// Initialize the application
+	// -----------------------------------------------------------
+	void Game::Init()
+	{
+		// anything that happens only once at application start goes here
+	}
+
+	// -----------------------------------------------------------
+	// Main application tick function - Executed once per frame
+	// -----------------------------------------------------------
+	void Game::Tick(float  deltaTime)
+	{
+		screen->Clear(0);
+		player.Update(deltaTime);
+
+	}
 }
