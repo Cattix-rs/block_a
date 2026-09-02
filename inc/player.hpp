@@ -9,7 +9,7 @@ namespace Tmpl8
 	class Player : Entity
 	{
 	public:
-		Player() = default;
+		Player();
 		
 		
 		~Player() = default;
