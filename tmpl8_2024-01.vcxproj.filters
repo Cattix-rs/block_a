@@ -26,8 +26,8 @@
     <ClCompile Include="src\physics.cpp" />
     <ClCompile Include="src\player.cpp" />
     <ClCompile Include="src\level.cpp" />
-    <ClCompile Include="scr\entity.cpp" />
     <ClCompile Include="src\input.cpp" />
+    <ClCompile Include="src\entity.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="game.h" />

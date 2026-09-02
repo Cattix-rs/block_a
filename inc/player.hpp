@@ -30,6 +30,8 @@ namespace Tmpl8
 	private:
 		float2 v{ 0.0f,0.0f };
 		float2 pos{ 0.0f,0.0f };
+		float width = 0.0f;
+		float height = 0.0f;
 		int hp = 100;
 		/*const*/ Sprite* player_1 = nullptr;
 		Surface* screen;

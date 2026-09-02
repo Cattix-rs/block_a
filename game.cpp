@@ -16,6 +16,7 @@ namespace Tmpl8
 	void Game::Init()
 	{
 		// anything that happens only once at application start goes here
+		player.Init();
 	}
 
 	// -----------------------------------------------------------

@@ -10,6 +10,9 @@ namespace Tmpl8
 		pos.x = static_cast<float>(px);
 		pos.y = static_cast<float>(py);
 		 Sprite player_1(new Surface("assets/ctankbase.tga"), 16);
+
+		 width = static_cast<float>(player_1.GetWidth());
+		 height = static_cast<float>(player_1.GetHeight());
 	}
 
 	void Player::Update(float deltaTime)
