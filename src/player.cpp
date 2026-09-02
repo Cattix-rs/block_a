@@ -4,18 +4,20 @@
 namespace Tmpl8
 {
 	Player::Player()
-		:player_1(new Sprite(new Surface("assets/ctankbase.tga"), 16))
+		:player_1(new Sprite(new Surface("assets/metalslug_main_torso_walk.png"), 1))
 	{
 		
 	}
+
+
 
 	void Player::Init(int px, int py)
 	{
 		pos.x = static_cast<float>(px);
 		pos.y = static_cast<float>(py);
 
-		 width = static_cast<float>(player_1->GetWidth());
-		 height = static_cast<float>(player_1->GetHeight());
+		width = static_cast<float>(player_1->GetWidth());
+		height = static_cast<float>(player_1->GetHeight());
 	}
 
 	void Player::Update(float deltaTime)

@@ -15,7 +15,7 @@ namespace Tmpl8
 	// -----------------------------------------------------------
 	void Game::Init()
 	{
-		// anything that happens only once at application start goes here
+		
 		player.Init();
 	}
 
@@ -24,9 +24,10 @@ namespace Tmpl8
 	// -----------------------------------------------------------
 	void Game::Tick(float  deltaTime)
 	{
+		deltaTime = min(deltaTime, 33.3333f);
 		screen->Clear(0);
 		player.Update(deltaTime);
 		player.Draw(screen);
-		//player_1.Draw(screen, 100, 100);
+		
 	}
 }
