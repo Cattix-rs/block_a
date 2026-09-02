@@ -11,7 +11,7 @@ namespace Tmpl8
 		
 		~Player() = default;
 
-		void Init(int px = 0, int py = 0,);
+		void Init(int px = 0, int py = 0);
 
 		void Update(float deltaTime);
 

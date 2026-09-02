@@ -122,7 +122,7 @@
   <!-- END Custom section -->
   <ItemGroup>
     <ClCompile Include="game.cpp" />
-    <ClCompile Include="scr\entity.cpp" />
+    <ClCompile Include="src\entity.cpp" />
     <ClCompile Include="src\input.cpp" />
     <ClCompile Include="src\level.cpp" />
     <ClCompile Include="src\physics.cpp" />
