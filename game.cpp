@@ -8,8 +8,8 @@
 #include "player.hpp"
 namespace Tmpl8
 {
-	Player player;
-
+	
+	
 	// -----------------------------------------------------------
 	// Initialize the application
 	// -----------------------------------------------------------
@@ -25,6 +25,7 @@ namespace Tmpl8
 	{
 		screen->Clear(0);
 		player.Update(deltaTime);
-
+		player.Draw(screen);
+		//player_1.Draw(screen, 100, 100);
 	}
 }

@@ -2,6 +2,8 @@
 #include "entity.hpp"
 #include <tmpl8math.h>
 
+
+
 namespace Tmpl8
 {
 	class Player : Entity
@@ -9,11 +11,13 @@ namespace Tmpl8
 	public:
 		Player() = default;
 		
+		
 		~Player() = default;
 
 		void Init(int px = 0, int py = 0);
 
 		void Update(float deltaTime);
+		void Draw(Surface* target);
 
 		float2 GetVelocity() const { return v; }
 		float2 GetPosition() const { return pos; }
@@ -27,5 +31,7 @@ namespace Tmpl8
 		float2 v{ 0.0f,0.0f };
 		float2 pos{ 0.0f,0.0f };
 		int hp = 100;
+		/*const*/ Sprite* player_1 = nullptr;
+		Surface* screen;
 	};
 }
