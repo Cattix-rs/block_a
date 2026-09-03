@@ -8,6 +8,7 @@ namespace Tmpl8
 	public:
 		enum state { right = 0, left = 1, jump = 2, shoot = 3 };
 		static int KeyIdentifier(state action);
+		void IsPressed(state action);
 		void Update();
 	private:
 		static bool PrevKeys[512];

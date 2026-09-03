@@ -25,8 +25,16 @@ namespace Tmpl8
 			cout << "shoot is being pressed" << endl;
 			return GLFW_KEY_F;
 			}
-			
+			default:
+			{
+				return 0;
+			}
 		}
+	}
+
+	void Input::IsPressed(state action)
+	{
+		//still in proggress
 	}
 
 	void Input::Update()
