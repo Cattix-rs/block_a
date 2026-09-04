@@ -35,5 +35,13 @@ namespace Tmpl8
 		int hp = 100;
 		/*const*/ Sprite* player_1 = nullptr;
 		Surface* screen;
+		enum State
+		{
+			Idle,
+			left,
+			right,
+			shoot
+		};
+		State movement = Idle;
 	};
 }

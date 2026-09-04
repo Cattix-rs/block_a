@@ -6,12 +6,16 @@ namespace Tmpl8
 	class Input
 	{
 	public:
-		enum state { right = 0, left = 1, jump = 2, shoot = 3 };
-		static int KeyIdentifier(state action);
-		void IsPressed(state action);
+		
+		bool IsDown(int key);
+		bool IsPressed(int key);
+		void KeyDown(int key);
+		void KeyUp(int key);
 		void Update();
 	private:
-		static bool PrevKeys[512];
-		
+		static const int totalkeys = 512;
+		 bool PrevKeys[totalkeys];
+		 bool CurrentKeys[totalkeys];
+		 
 	};
 }

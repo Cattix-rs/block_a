@@ -29,5 +29,6 @@ namespace Tmpl8
 		player.Update(deltaTime);
 		player.Draw(screen);
 		
+		
 	}
 }

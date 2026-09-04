@@ -1,43 +1,35 @@
 #include <precomp.h>
 #include <input.hpp>
-#include <iostream>
-extern bool IsKeyDown(unsigned int key);
+
+
 namespace Tmpl8
 {
-	int Input::KeyIdentifier(state action)
+	bool Input::IsDown(int key)
 	{
-		switch (action)
-		{
-		case state::right:
-		{
-			return GLFW_KEY_D;
-		}
-		case state::left:
-			{
-			return GLFW_KEY_A;
-			}
-		case state::jump:
-			{
-			return GLFW_KEY_SPACE;
-			}
-		case state::shoot:
-			{
-			cout << "shoot is being pressed" << endl;
-			return GLFW_KEY_F;
-			}
-			default:
-			{
-				return 0;
-			}
-		}
+		return CurrentKeys[key];
 	}
 
-	void Input::IsPressed(state action)
+	bool Input::IsPressed(int key)
 	{
-		//still in proggress
+		return CurrentKeys[key] && PrevKeys[key] == false;
 	}
 
+	void Input::KeyDown(int key)
+	{
+		CurrentKeys[key] = true;
+	}
+
+	void Input::KeyUp(int key)
+	{
+		CurrentKeys[key] = false;
+	}
+
+	
 	void Input::Update()
 	{
+		for (int i = 0; i < totalkeys; i++)
+		{
+			PrevKeys[i] = CurrentKeys[i];
+		}
 	}
 }

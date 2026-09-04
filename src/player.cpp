@@ -1,6 +1,8 @@
 #include <precomp.h>
 #include <player.hpp>
 
+#include "input.hpp"
+
 namespace Tmpl8
 {
 	Player::Player()
@@ -24,6 +26,13 @@ namespace Tmpl8
 	{
 		Entity::Update(deltaTime);
 		
+		const float speedx = 0.2f;
+
+		if (Input::IsDown(GLFW_KEY_A))
+		{
+			v.x = -speedx;
+		}
+
 	}
 
 	void Player::Draw(Surface* target)
